@@ -1,0 +1,7 @@
+<%# locals: title (required), actions: optional HTML-safe string %>
+<header class="kubik-admin-fieldset__header">
+  <h3 class="kubik-admin-fieldset__title"><%= title %></h3>
+  <% if local_assigns[:actions].present? %>
+    <div class="kubik-admin-fieldset__actions"><%= actions %></div>
+  <% end %>
+</header>

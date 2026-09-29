@@ -1,0 +1,7 @@
+<%# layout: title (required), actions: optional %>
+<div class="kubik-admin-fieldset">
+  <%= render "active_admin/kubik/fieldset_header", title: title, actions: local_assigns[:actions] %>
+  <div class="kubik-admin-fieldset__body">
+    <%= yield %>
+  </div>
+</div>
