@@ -25,7 +25,8 @@
           }
         }
 
-        a {
+        a,
+        .kubik-offcanvas-action-item-label {
           @include kubik-action-button;
           padding: var(--kubik-interface-space-400);
         }

@@ -17,5 +17,21 @@
 
   .tab-content {
     margin: .9rem 0;
+
+    .attributes_table {
+      margin: 0 0 1rem;
+
+      @media screen and (min-width: 75em) {
+        margin: 0 0 1rem;
+      }
+    }
+  }
+}
+
+.active_admin .without_sidebar #main_content_wrapper .tab-content .attributes_table {
+  margin: 0 0 1rem;
+
+  @media screen and (min-width: 75em) {
+    margin: 0 0 1rem;
   }
 }

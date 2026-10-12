@@ -13,3 +13,9 @@
         }
     }
 }
+
+.kubik-offcanvas .active_admin .formtastic fieldset.inputs > legend {
+    border: 0;
+    padding-left: 0;
+    padding-top: 0;
+}

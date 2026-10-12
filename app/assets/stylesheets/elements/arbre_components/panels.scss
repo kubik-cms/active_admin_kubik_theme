@@ -1,4 +1,14 @@
 .active_admin {
+  .ui-tabs-panel:has(.panel) {
+    gap: 1rem;
+    .panel {
+      padding: 0;
+    }
+    .panel__double {
+      flex: 1 1 calc(50% - .5rem);
+      padding: 0;
+    }
+  }
   .panel:not(.comments) {
     padding: 2rem 0;
 
@@ -7,6 +17,13 @@
       padding: 0 var(--kubik-interface-space-400);
       font-size: var(--kubik-interface-base-font-size);
       font-weight: 700;
+    }
+
+    &.panel__double > h3 {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .kubik_panel_table {
@@ -23,5 +40,8 @@
       padding-left: 1rem;
       padding-right: 1rem;
     }
+  }
+  &.show .ui-tabs-panel:has(.panel) .panel > h3 {
+    padding: 0;
   }
 }
