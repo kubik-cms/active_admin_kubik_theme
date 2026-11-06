@@ -10,6 +10,17 @@ module ActiveAdminKubik
           include ActiveAdmin::KubikFieldsetHelper
         end
       end
+
+      initializer "active_admin_kubik.importmap_pin", after: :load_config_initializers do
+        map = defined?(::Rails) && ::Rails.application.config.respond_to?(:kubik_importmap) &&
+              ::Rails.application.config.kubik_importmap
+        next unless map
+
+        js = root.join("app/assets/javascripts/admin_nav_tabs.js")
+        next unless js.exist?
+
+        map.pin "active_admin_kubik/admin_nav_tabs", to: "admin_nav_tabs.js"
+      end
     end
   end
 end

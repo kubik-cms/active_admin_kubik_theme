@@ -1,6 +1,6 @@
 {
   "name": "active_admin_kubik",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "source": [
     "src/stylesheets/index.js",
     "src/javascripts/index.js"
